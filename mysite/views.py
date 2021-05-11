@@ -135,3 +135,17 @@ def login(request):
         login_form = forms.LoginForm()
 
     return render(request, 'login.html', locals())
+
+
+def userinfo(request):
+    if 'username' in request.session:
+        username = request.session['username']
+    else:
+        return redirect('/login/')
+
+    try:
+        userinfo = models.User.objects.get(name=username)
+    except:
+        pass
+
+    return render(request, 'userinfo.html', locals())
