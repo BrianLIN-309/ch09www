@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87c579fc-f683-4bf2-8b9a-e30e8999bbb0" name="Default Changelist" comment="新增個人資料" />
+    <list default="true" id="87c579fc-f683-4bf2-8b9a-e30e8999bbb0" name="Default Changelist" comment="9.2.2 整合 Django 的訊息顯示框架 Message Framework">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
@@ -80,7 +85,7 @@
       <workItem from="1620093365730" duration="1179000" />
       <workItem from="1620094788923" duration="211000" />
       <workItem from="1620097132271" duration="2921000" />
-      <workItem from="1620695841047" duration="5419000" />
+      <workItem from="1620695841047" duration="6670000" />
     </task>
     <task id="LOCAL-00001" summary="建立使用者資料表">
       <created>1620699712790</created>
@@ -96,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620700815875</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增個人資料">
+      <created>1620702579160</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620702579160</updated>
+    </task>
+    <task id="LOCAL-00004" summary="9.2.2 整合 Django 的訊息顯示框架 Message Framework">
+      <created>1620702659071</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620702659071</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +135,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="建立使用者資料表" />
     <MESSAGE value="新增個人資料" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增個人資料" />
+    <MESSAGE value="9.2.2 整合 Django 的訊息顯示框架 Message Framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="9.2.2 整合 Django 的訊息顯示框架 Message Framework" />
   </component>
 </project>
