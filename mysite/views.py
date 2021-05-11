@@ -7,6 +7,7 @@ from . import models, forms
 from django.core.mail import send_mail
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.sessions.models import Session
+from django.contrib import messages
 # Create your views here.
 # def index(request):
 #     years = range(1960,2021)
@@ -124,18 +125,18 @@ def login(request):
                 if user.password == login_password:
                     request.session['username'] = user.name
                     request.session['useremail'] = user.email
+                    messages.add_message(request, messages.SUCCESS, '成功登入了')
                     return redirect('/')
                 else:
-                    message = "密碼錯誤，請再檢查一次"
+                    messages.add_message(request, messages.WARNING, "密碼錯誤，請再檢查一次")
             except:
-                message = "找不到使用者"
+                messages.add_message(request, messages.WARNING, "找不到使用者")
         else:
-            message = "請檢查輸入的欄位內容"
+            messages.add_message(request, messages.INFO, "請檢查輸入的欄位內容")
     else:
         login_form = forms.LoginForm()
 
     return render(request, 'login.html', locals())
-
 
 def userinfo(request):
     if 'username' in request.session:
